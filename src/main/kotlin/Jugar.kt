@@ -33,13 +33,13 @@ class Jugar(val palabra :Palabra,val jugador :Jugador) {
             if (letra != null && jugador.intentarLetra(letra)){
 
                 if (palabra.revelarLetra(letra)){
-                    println("¡Bien hecho! La letra $letra")
+                    println("\n¡Bien hecho! La letra $letra esta en la palabra.\n")
                 }else{
-                    println("La letra $letra no esta en la palara.")
+                    println("\nLa letra $letra no esta en la palara.\n")
                     jugador.fallarIntento()
                 }
 
-            }else{println("Letra no válida o ya utilizada. Intenta otra vez.")}
+            }else{println("\nLetra no válida o ya utilizada. Intenta otra vez.\n")}
         }
         if (palabra.esCompleta()) {
             println("\n¡Felicidades! Has adivinado la palabra: ${palabra.obtenerProgreso()}")

@@ -39,7 +39,7 @@ class Palabra(var palabraOculta :String) {
         var contador = 0
         for (letrap in palabraOculta){
             if (letrap.quitarAcentos() == letra.quitarAcentos()){
-                progreso[contador] = letra
+                progreso[contador] = letrap
                 acierto = true
             }
             contador ++
