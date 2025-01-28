@@ -127,5 +127,4 @@ class Palabra(var palabraOculta :String) {
             return palabras.take(cantidad).toMutableSet()
         }
     }
-
 }
